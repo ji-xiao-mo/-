@@ -1,0 +1,51 @@
+panic error time:2024-03-06 19:24:57
+runtime error: integer divide by zero
+stacktrace from panic:goroutine 4 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x64
+GOwork/project/gin-ranking/pkg/logger.Recover.func1()
+	/Users/hanzongzheng/Desktop/GOwork/project/gin-ranking/pkg/logger/logger.go:139 +0x424
+panic({0x1045cbee0?, 0x1048b4c10?})
+	/usr/local/go/src/runtime/panic.go:920 +0x254
+GOwork/project/gin-ranking/controllers.UserController.GetList({}, 0x140001d5a00)
+	/Users/hanzongzheng/Desktop/GOwork/project/gin-ranking/controllers/user.go:26 +0x30
+github.com/gin-gonic/gin.(*Context).Next(0x140001d5a00)
+	/Users/hanzongzheng/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 +0x98
+GOwork/project/gin-ranking/pkg/logger.Recover(0x140001d5a00)
+	/Users/hanzongzheng/Desktop/GOwork/project/gin-ranking/pkg/logger/logger.go:149 +0x8c
+github.com/gin-gonic/gin.(*Context).Next(0x140001d5a00)
+	/Users/hanzongzheng/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 +0x98
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0x140001d5a00)
+	/Users/hanzongzheng/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xb4
+github.com/gin-gonic/gin.(*Context).Next(0x140001d5a00)
+	/Users/hanzongzheng/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 +0x98
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0x140001d5a00)
+	/Users/hanzongzheng/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x110
+github.com/gin-gonic/gin.(*Context).Next(0x140001d5a00)
+	/Users/hanzongzheng/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 +0x98
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0x140001d5a00)
+	/Users/hanzongzheng/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xb4
+github.com/gin-gonic/gin.(*Context).Next(0x140001d5a00)
+	/Users/hanzongzheng/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 +0x98
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0x140001516c0, 0x140001d5a00)
+	/Users/hanzongzheng/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x36c
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0x140001516c0, {0x1046420d0, 0x14000411420}, 0x140001d5900)
+	/Users/hanzongzheng/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0xc0
+net/http.serverHandler.ServeHTTP({0x1400035aff0}, {0x1046420d0, 0x14000411420}, 0x140001d5900)
+	/usr/local/go/src/net/http/server.go:2938 +0x2a0
+net/http.(*conn).serve(0x1400017c750, {0x1046429f0, 0x14000428ff0})
+	/usr/local/go/src/net/http/server.go:2009 +0x15b4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x870
+
+{"level":"error","msg":"[]","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-03-06 23:00:23"}
+{"level":"error","msg":"[]","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-03-06 23:04:18"}
+{"level":"error","msg":"[]","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-03-06 23:05:27"}
+{"level":"error","msg":"[]","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-03-06 23:06:59"}
+{"level":"error","msg":"[]","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-03-06 23:12:46"}
+{"level":"error","msg":"[]","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-03-06 23:14:58"}
+{"level":"error","msg":"[]","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-03-06 23:16:35"}
+{"level":"error","msg":"[]","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-03-06 23:24:20"}
+{"level":"error","msg":"[]","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-03-06 23:25:30"}
+{"level":"error","msg":"[]","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-03-06 23:27:25"}
+{"level":"error","msg":"[]","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-03-06 23:29:55"}
